@@ -1,0 +1,9 @@
+Git tutorial
+this is git course 6 . Hope you like this tutorial
+modified not in staging area...
+
+It should be ignored and it is untracked
+
+Now we are into the login branch
+
+git alias tutorial
