@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         mWebView = (WebView) findViewById(R.id.activity_main_webview);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mWebView.loadUrl("https://www.shop101.com/dipbaazar");
+        mWebView.loadUrl("https://www.google.com/");
         mWebView.setWebViewClient(new com.example.diptam.dipbaazar.MyAppWebViewClient(){
             @Override
             public void onPageFinished(WebView view, String url) {
