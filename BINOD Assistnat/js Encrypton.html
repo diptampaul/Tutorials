@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://obfuscator.io/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>JavaScript Obfuscator Tool</title>
+<meta name="description" content="JavaScript Obfuscator is a free online tool that obfuscates your source code, preventing it from being stolen and used without permission.">
+<meta name="Keywords" content="obfuscator, javascript obfuscator, javascript obfuscator tool, obfuscation js, obfuscate tool, обфускатор, code obfuscator, obfuscator online, uglify, minify, js obfuscator, obfuscator io, obfuscator.io, obfuscate, protection">
+<link rel="stylesheet" href="./js Encrypton_files/bundle.css" media="screen" title="no title">
+
+<script type="text/javascript" async="" src="./js Encrypton_files/analytics.js.download"></script><script async="" src="./js Encrypton_files/js"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116652505-1');
+    </script>
+<script type="application/ld+json">
+        {
+             "@context": "http://schema.org",
+             "@type": "Organization",
+             "name": "Obfuscator.io",
+             "url": "https://obfuscator.io",
+             "image": "http://obfuscator.io/static/images/logo.png",
+             "sameAs": [
+                "https://github.com/javascript-obfuscator/javascript-obfuscator",
+                "https://http://javascriptobfuscator.herokuapp.com/",
+                "https://www.npmjs.com/package/javascript-obfuscator"
+             ]
+        }
+    </script>
+<script>(function() {
+			// injected DOM script is not a content script anymore,
+			// it can modify objects and functions of the page
+			var _pushState = history.pushState;
+			history.pushState = function(state, title, url) {
+				_pushState.call(this, state, title, url);
+				window.dispatchEvent(
+					new CustomEvent('state-changed', { detail: url })
+				);
+			};
+			// repeat the above for replaceState too
+		})();</script><script>(function() {
+			// injected DOM script is not a content script anymore,
+			// it can modify objects and functions of the page
+			var _pushState = history.pushState;
+			history.pushState = function(state, title, url) {
+				_pushState.call(this, state, title, url);
+				window.dispatchEvent(
+					new CustomEvent('state-changed', { detail: url })
+				);
+			};
+			// repeat the above for replaceState too
+		})();</script><script>(function() {
+			// injected DOM script is not a content script anymore,
+			// it can modify objects and functions of the page
+			var _pushState = history.pushState;
+			history.pushState = function(state, title, url) {
+				_pushState.call(this, state, title, url);
+				window.dispatchEvent(
+					new CustomEvent('state-changed', { detail: url })
+				);
+			};
+			// repeat the above for replaceState too
+		})();</script></head>
+<body class="expansion-alids-init" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+<div class="ui container grid middle aligned stackable">
+<div class="row">
+<div class="column twelve wide">
+<div class="ui basic segment">
+<h1>JavaScript Obfuscator Tool</h1>
+<p>
+A free and efficient obfuscator for JavaScript (including partial support of ES2019). Make your code harder to copy and
+prevent people from stealing your work. This tool is a Web UI to the excellent (and open source)
+<code><a href="https://github.com/javascript-obfuscator/javascript-obfuscator" target="_new">javascript-obfuscator</a>@1.9.0</code>
+created by Timofey Kachalov.
+</p>
+<div id="GithubBadges">
+<iframe src="./js Encrypton_files/github-btn.html" frameborder="0" scrolling="0" width="150px" height="30px"></iframe>
+<iframe src="./js Encrypton_files/github-btn(1).html" frameborder="0" scrolling="0" width="90px" height="30px"></iframe>
+<div id="donate" title="Sponsor javascript-obfuscator/javascript-obfuscator" role="button" onclick="window.scrollTo(0, document.body.scrollHeight)">
+<svg id="donate-heart" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true">
+<path fill-rule="evenodd" d="M8.727 3C7.091 3 6.001 4.65 6.001 4.65S4.909 3 3.273 3C1.636 3 0 4.1 0 6.3 0 9.6 6 14 6 14s6-4.4 6-7.7C12 4.1 10.364 3 8.727 3z"></path>
+</svg>
+Sponsor
+</div>
+</div>
+</div>
+</div>
+<div class="column four wide">
+<div class="ui basic segment">
+<a href="https://github.com/javascript-obfuscator/javascript-obfuscator">
+<img id="Logo" class="ui image centered" src="./js Encrypton_files/logo.png" alt="obfuscator.io">
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="ui container message internally celled equal width stackable four column grid">
+<div class="column">
+<h3>What is this?</h3>
+<p>This tool transforms your original JavaScript source code into a new representation that's harder to
+understand, copy, re-use and modify without authorization. The obfuscated result will have the exact
+functionality of the original code.</p>
+</div>
+<div class="column">
+<h3>So, it is like UglifyJS, Closure Compiler, etc?</h3>
+<p>Yes and no. While UglifyJS (and others minifiers) does make the output code harder to understand
+(compressed and ugly), it can be easily transformed into something readable using a JS
+Beautifier.</p>
+<p>This tool prevents that by using various transformations and "traps", such as
+<strong>self-defending</strong> and <strong>debug protection</strong>.</p>
+</div>
+<div class="column">
+<h3>How does the obfuscation work?</h3>
+<p>Through a series of transformations, such as variable / function / arguments renaming, string removal,
+and others, your source code is transformed into something unreadable, while working exactly as
+before.</p>
+<p><a href="https://obfuscator.io/#FAQ">Read more in the FAQ...</a></p>
+</div>
+<div class="column">
+<h3>Sounds great!</h3>
+<p>Just paste your code or upload it below and click on "obfuscate".</p>
+<p>Also, be sure to read about <a href="https://obfuscator.io/#Options">all the options</a> to understand all the trade-offs
+between code protection and code size / speed.</p>
+</div>
+</div>
+<div class="ui container grid">
+<div class="row">
+<div class="column">
+<div class="" id="root"><div><div><div><div class="ui stackable top attached three item menu"><a class="active item">Copy &amp; Paste JavaScript Code</a><a class="item">Upload JavaScript File</a><a class="item">Output</a></div><div class="ui bottom attached tab segment active"><div class="react-codemirror2"><div class="CodeMirror cm-s-default"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 92px; left: 77.9844px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -10px; border-right-width: 20px; min-height: 118px; min-width: 306.094px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 0px; width: 1049px; height: 22px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 88px; width: 43.9844px; height: 22px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 22px; width: 1049px; height: 66px;"></div></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-comment">// Paste your JavaScript code here</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-keyword">function</span> <span class="cm-def">hi</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  <span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-string">"Hello World!"</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-variable">hi</span>();</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 20px; width: 1px; border-bottom: 0px solid transparent; top: 118px;"></div><div class="CodeMirror-gutters" style="height: 138px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div></div><div class="ui basic segment"><button class="ui primary button" role="button">Obfuscate</button></div></div></div></div><div class="ui grid"><div class="column"><form class="ui form OptionsForm"><div class="ui doubling stackable relaxed four column grid"><div class="column" style="display: block;"><div class="ui basic segment"><button class="ui fluid button" role="button">Reset options</button><div class="ui divider"></div><div class="field"><div class="ui checked checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Compact code</label></div></div><div class="field"><label>Identifier Names Generator</label><div role="listbox" aria-expanded="false" class="ui fluid selection dropdown" tabindex="0"><div class="text" role="alert" aria-live="polite">hexadecimal</div><i aria-hidden="true" class="dropdown icon"></i><div class="menu transition"><div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">dictionary</span></div><div role="option" aria-checked="true" aria-selected="true" class="active selected item" style="pointer-events: all;"><span class="text">hexadecimal</span></div><div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">mangled</span></div><div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">mangled-shuffled</span></div></div></div></div><div><div class="disabled field"><label>Identifiers Dictionary</label><div class="ui disabled action input"><input placeholder="foo" disabled="" type="text" tabindex="-1" value=""><button class="ui icon button" role="button"><i aria-hidden="true" class="plus icon"></i></button></div></div><div class="ui labels"></div></div><div class="field"><label>Identifiers Prefix</label><div class="ui input"><input placeholder="" type="text" value=""></div></div><div class="field"><div class="ui checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Rename Globals</label></div></div><div class="field"><div class="ui checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Rename Properties</label></div></div><div class="ui divider"></div><div class="field"><div class="ui checked checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Simplify</label></div></div><div class="ui divider"></div><div class="field"><div class="ui checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Control Flow Flattening</label></div></div><div class="disabled field"><label>Control Flow Flattening Threshold</label><div class="ui disabled input"><input min="0" max="1" step="0.1" disabled="" type="number" tabindex="-1" value="0.75"></div></div><div class="ui divider"></div><div class="field"><div class="ui checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Dead Code Injection</label></div></div><div class="disabled field"><label>Dead Code Injection Threshold</label><div class="ui disabled input"><input min="0" max="1" step="0.1" disabled="" type="number" tabindex="-1" value="0.4"></div></div></div></div><div class="column"><div class="ui basic segment"><div class="field"><div class="ui checked checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>String Array</label></div></div><div class="field"><div class="ui checked checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Rotate String Array</label></div></div><div class="field"><div class="ui checked checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Shuffle String Array</label></div></div><div class="field"><label>String Array Encoding</label><div role="listbox" aria-disabled="false" aria-expanded="false" class="ui fluid selection dropdown" tabindex="0"><div class="text" role="alert" aria-live="polite">Off</div><i aria-hidden="true" class="dropdown icon"></i><div class="menu transition"><div role="option" aria-checked="true" aria-selected="true" class="active selected item" style="pointer-events: all;"><span class="text">Off</span></div><div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">Base64</span></div><div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">RC4</span></div></div></div></div><div class="field"><label>String Array Threshold</label><div class="ui input"><input min="0" max="1" step="0.1" type="number" value="0.8"></div></div><div class="ui divider"></div><div class="field"><div class="ui checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Split Strings</label></div></div><div class="disabled field"><label>Split Strings Chunk Length</label><div class="ui disabled input"><input min="1" step="1" disabled="" type="number" tabindex="-1" value="10"></div></div><div class="ui divider"></div><div class="field"><div class="ui checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Transform Object Keys</label></div></div><div class="ui divider"></div><div class="field"><div class="ui checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Numbers To Expressions</label></div></div><div class="ui divider"></div><div class="field"><div class="ui checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Unicode Escape Sequence</label></div></div></div></div><div class="column"><div class="ui basic segment"><div class="field"><div class="ui checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Disable Console Output</label></div></div><div class="ui divider"></div><div class="field"><div class="ui checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Self Defending</label></div></div><div class="ui divider"></div><div class="field"><div class="ui checkbox"><input class="hidden" readonly="" tabindex="0" type="checkbox" value=""><label>Debug Protection</label></div></div><div class="disabled field"><div class="ui disabled checkbox"><input class="hidden" readonly="" tabindex="-1" type="checkbox" value=""><label>Debug Protection Interval</label></div></div><div class="ui divider"></div><div><div class="field"><label>Domain lock</label><div class="ui action input"><input placeholder="domain.com" type="text" value=""><button class="ui icon button" role="button"><i aria-hidden="true" class="plus icon"></i></button></div></div><div class="ui labels"></div></div><div><div class="field"><label>Reserved Names</label><div class="ui action input"><input placeholder="^someVariable *or *RegExp" type="text" value=""><button class="ui icon button" role="button"><i aria-hidden="true" class="plus icon"></i></button></div></div><div class="ui labels"></div></div><div><div class="field"><label>Reserved Strings</label><div class="ui action input"><input placeholder="^some *string *or RegExp" type="text" value=""><button class="ui icon button" role="button"><i aria-hidden="true" class="plus icon"></i></button></div></div><div class="ui labels"></div></div></div></div><div class="column"><div class="ui basic segment"><div class="field"><label>Sourcemaps</label><div role="listbox" aria-expanded="false" class="ui fluid selection dropdown" tabindex="0"><div class="text" role="alert" aria-live="polite">Off</div><i aria-hidden="true" class="dropdown icon"></i><div class="menu transition"><div role="option" aria-checked="true" aria-selected="true" class="active selected item" style="pointer-events: all;"><span class="text">Off</span></div><div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">Inline</span></div><div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">Separate</span></div></div></div></div><div class="disabled field"><label>Source Map Base URL</label><div class="ui disabled input"><input placeholder="http://localhost:3000" disabled="" type="text" tabindex="-1" value=""></div></div><div class="disabled field"><label>Source Map File Name</label><div class="ui disabled input"><input placeholder="example" disabled="" type="text" tabindex="-1" value=""></div></div><div class="ui divider"></div><div class="field"><label>Seed</label><div class="ui input"><input min="0" max="99999999" step="1" type="number" value="0"></div></div><div class="ui divider"></div><div class="field"><label>Target</label><div role="listbox" aria-expanded="false" class="ui fluid selection dropdown" tabindex="0"><div class="text" role="alert" aria-live="polite">Browser</div><i aria-hidden="true" class="dropdown icon"></i><div class="menu transition"><div role="option" aria-checked="true" aria-selected="true" class="active selected item" style="pointer-events: all;"><span class="text">Browser</span></div><div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">Browser No Eval</span></div><div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">Node</span></div></div></div></div></div></div></div></form></div></div></div></div>
+</div>
+</div>
+<div class="row">
+<div class="column">
+<table class="ui definition table" id="Options">
+<tbody>
+<tr>
+<td class="collapsing">Compact Code</td>
+<td>
+Removes line breaks from the output obfuscated code.
+</td>
+</tr>
+<tr>
+<td class="collapsing">Identifier Names Generator</td>
+<td>
+<p>Use this option to control how identifiers (variable names, functions names, etc) will be
+obfuscated.</p>
+<strong>dictionary</strong>
+<p>Generates identifier names using names from <code>identifiersDictionary</code> list
+</p>
+<strong>hexadecimal</strong>
+<p>Generates random identifier names using a hexadecimal pattern (e.g: <code>0xabc123</code>)
+</p>
+<strong>mangled</strong>
+<p>Uses short identifier names (e.g: <code>a</code>, <code>b</code>, <code>c</code>, etc.)</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Identifiers Dictionary</td>
+<td>
+<p>This options sets identifiers list for <code>identifierNamesGenerator: dictionary</code> option
+</p></td>
+</tr>
+<tr>
+<td class="collapsing">Identifiers Prefix</td>
+<td>
+<p>This options makes all global identifiers have a specific prefix.</p>
+<p>Use this option when obfuscating multiple files that are loaded on the same page. This option
+helps to avoid conflicts between global identifiers of these files. Use a different prefix
+for each file.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Rename Globals</td>
+<td>
+<div class="ui tiny message">
+<p><i class="warning sign icon"></i> This option can break your code. Only enable it if you
+know what it does.</p>
+</div>
+<p>Enables the obfuscation of global variables and function names with declaration.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Rename Properties</td>
+<td>
+<div class="ui tiny message">
+<p><i class="warning sign icon"></i> This option <b>WILL</b> break your code in most cases. Enable it only if you know what it does!</p>
+</div>
+<p>Enables renaming of property names. All built-in DOM properties and properties in core JavaScript classes will be ignored.</p>
+<p>To set format of renamed property names use <code>identifierNamesGenerator</code> option.</p>
+<p>To control which properties will be renamed use <code>reservedNames</code> option.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Simplify</td>
+<td>
+<p>This option enables additional code obfuscation through simplification.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Control Flow Flattening</td>
+<td>
+<div class="ui tiny message">
+<p><i class="warning sign icon"></i> This option greatly affects the performance up to 1.5x
+slower runtime speed.</p>
+</div>
+<p>
+Enables code control flow flattening. Control flow flattening is a structure transformation
+of the source code that hinders program comprehension. See the docs on <a href="https://github.com/javascript-obfuscator/javascript-obfuscator#controlflowflattening" target="_new">JavaScript's obfuscator GH page</a> for an example of how the
+transformation works.
+</p>
+<table class="ui definition table">
+<tbody>
+<tr>
+<td class="collapsing">Control Flow Flattening Threshold</td>
+<td>
+<p>You can use this setting to adjust the probability (from 0 to 1) that a <code>controlFlowFlattening</code>
+transformation will be applied to a node.</p>
+<p>In larger codebases it's advised to lower this value, because larger amounts of
+control flow transformations can increase the size of your code and slow it
+down.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Dead Code Injection</td>
+<td>
+<div class="ui tiny message">
+<p><i class="warning sign icon"></i> This option increases the size of the obfuscated code
+greatly (up to 200%).</p>
+</div>
+<p>
+This feature adds random blocks of dead code (i.e: code that won't be executed) to the
+ obfuscated output, making it harder to be reverserd-engineered. See the docs on <a href="https://github.com/javascript-obfuscator/javascript-obfuscator#deadcodeinjection" target="_new">JavaScript Obfuscator's GH page</a> for an example of how this feature
+works.
+</p>
+<table class="ui definition table">
+<tbody>
+<tr>
+<td class="collapsing">Dead Code Injection Threshold</td>
+<td>
+<p>You can use this setting to adjust the probability (from 0 to 1) that a node will
+be affected by the <code>deadCodeInjection</code> option.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+<small>requires the <strong>String Array</strong> option.</small>
+</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Split Strings</td>
+<td>
+<div class="ui tiny message">
+<p><i class="warning sign icon"></i> This option increases the size of the obfuscated code.</p>
+</div>
+<p>
+This feature splits literal strings into chunks with length of the <code>splitStringsChunkLength</code> option value.
+</p>
+<table class="ui definition table">
+<tbody>
+<tr>
+<td class="collapsing">Split Strings Chunk Length</td>
+<td>
+<p>
+You can use this setting to set chunk length of the <code>splitStrings</code> option.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="collapsing">String Array</td>
+<td>
+<p>
+Removes string literals and place them in a special array. For instance the string "Hello
+World" in <code>var m = "Hello World";</code> will be replaced to a call to a function that
+will retrieve its value at runtime, e.g: <code>var m = _0xb0c3('0x1');</code>
+</p>
+<p>See the options below on how to configure this feature be more or less resilient.</p>
+<table class="ui definition table">
+<tbody>
+<tr>
+<td class="collapsing">Rotate String Array</td>
+<td>
+<p>Shift the <code>stringArray</code> array by a fixed and random (generated at the
+code obfuscation) places. This makes it harder to match the order of the removed
+strings to their original place.</p>
+<p>This option is recommended if your original source code isn't small, as the
+helper function can attract attention.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Shuffle String Array</td>
+<td>
+<p>Randomly shuffles the <code>stringArray</code> array items.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Encode String Literals</td>
+<td>
+<div class="ui tiny message">
+<p><i class="warning sign icon"></i> This option can slightly slow down your
+script.</p>
+</div>
+<p>Encode all string literals of the <code>stringArray</code> using either Base64 or
+RC4 and inserts a special function that it's used to decode it back at runtime.
+</p>
+<p>Beware that the RC4 option is about 30-35% slower than the Base64 option, but
+it's more difficult to retrieve the strings back.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">String Array Threshold</td>
+<td>
+<p>You can use this setting to adjust the probability (from 0 to 1) that a string
+literal will be inserted into the <code>stringArray</code>.</p>
+<p>This setting is useful in large codebases as repeatdely calls to the <code>stringArray</code>
+function can slow down your code.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Transform Object Keys</td>
+<td>
+<p>Transforms (obfuscates) object keys.</p>
+<p>For instance, this code <code>var a = {enabled: true};</code> when obfuscated with this
+option will hide the <code>enabled</code> object key: <code>var a = {}; a[_0x2ae0[('0x0')] =
+true;</code>.</p>
+<p>See the <a href="https://github.com/javascript-obfuscator/javascript-obfuscator#transformobjectkeys" target="_new">official documentation of the JavaScript Obfuscator on GitHub</a> for a
+full example.</p>
+<p>
+<small>ideally used with the <strong>String Array</strong> setting.</small>
+</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Numbers To Expressions</td>
+<td>
+<p>Enables numbers conversion to expressions</p>
+<p>
+Example:<br>
+<code>
+// input<br>
+const foo = 1234;<br>
+<br>
+// output<br>
+const foo=-0xd93+-0x10b4+0x41*0x67+0x84e*0x3+-0xff8;
+</code>
+</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Escape Unicode Sequence</td>
+<td>
+<p>Converts all the strings to their unicode representation. For instance, the string <code>"Hello
+World!"</code> will be converted to <code>"'\x48\x65\x6c\x6c\x6f\x20\x57\x6f\x72\x6c\x64\x21"</code>.
+</p>
+<p>This convertion is pretty easy to revert, and will increase the obfuscated code size greatly.
+ It's not recommended on larger code bases.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Disable Console Output</td>
+<td>
+Disables the use of <code>console.log</code>, <code>console.info</code>,
+<code>console.error</code> and <code>console.warn</code> by replacing them with empty functions.
+This makes the use of the debugger harder.
+</td>
+</tr>
+<tr>
+<td class="collapsing">Self Defending</td>
+<td>
+<p>This option makes the output code resilient against formating and variable renaming. If one
+tries to use a JavaScript beautifier on the obfuscated code, the code won't work anymore,
+making it harder to understand and modify it.</p>
+<p>
+<small>requires the <strong>Compact Code</strong> setting.</small>
+</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Debug Protection</td>
+<td>
+<div class="ui tiny message">
+<p><i class="warning sign icon"></i> Can freeze your browser if you open the Developer
+Tools.</p>
+</div>
+<p>This option makes it almost impossible to use the <strong>Console</strong> tab of the
+Developer Tools (both on Google Chrome and Mozilla Firefox).</p>
+<table class="ui definition table">
+<tbody>
+<tr>
+<td class="collapsing">Debug Protection Interval</td>
+<td>
+<p>If checked, an interval is used to force the debug mode on the
+<strong>Console</strong> tab, making it harder to use other features of the
+Developer Tools.</p>
+<p>How does it works? A special code that calls <code>debugger;</code> repeatedly is
+inserted throughout the obfuscated source code.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Domain Lock</td>
+<td>
+<p>Locks the obfuscated source code so it only runs on specific domains and/or sub-domains. This
+makes really hard for someone just copy and paste your source code and run elsewhere.</p>
+<strong>Multiple domains and sub-domains</strong>
+<p>It's possible to lock your code to more than one domain or sub-domain. For instance, to lock
+it so the code only runs on <strong>www.example.com</strong> add
+<code>www.example.com</code>, to make it work on root domain and <strong>any sub-domain from
+example.com</strong>, use <code>.example.com</code>.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Reserved Names</td>
+<td>
+<p>Disables obfuscation and generation of identifiers, which being matched by passed RegExp
+patterns.</p>
+<p>For instance, if you add <code>^someName</code>, the obfuscator will ensure that all
+variables, function names and function arguments that starts with <strong>someName</strong>
+ will not get mangled.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Reserved Strings</td>
+<td>
+<p>Disables transformation of string literals, which being matched by passed RegExp patterns.</p>
+<p>For instance, if you add <code>^some *string</code>, the obfuscator will ensure that all
+strings that starts with <strong>some string</strong>
+will not get moved to the `stringArray`.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Source Map</td>
+<td>
+<div class="ui tiny message">
+<p><i class="warning sign icon"></i> Be sure not to upload the obfuscated source code with
+the inline source map embedded on it, as it contains your original source code.</p>
+</div>
+<p>Source maps can be useful to help you debug your obfuscated Java Script source code. If you
+want or need to debug in production, you can upload the separate source map file to a secret
+location and then point your browser there. <a href="https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps" target="_new">Read more about source maps on the Google Chrome Developer Tools
+website</a>.</p>
+<strong>Inline Source Map</strong>
+<p>This embeds the source map of your source in the result of the obfuscated code. Useful if you
+just want to debug locally on your machine.</p>
+<strong>Separate Source Map</strong>
+<p>This generates a separate file with the source map. Useful to debug code in production, as
+this enables you to upload the source map to a secret location on your server and then point
+your browser to use it.</p>
+<p>Use the <strong>Source Map Base URL</strong> and <strong>Source Map File Name</strong> to
+customize the <code>sourceMappingURL</code> property that will get appended to the end of
+your obfuscated code.</p>
+<p>For instance, if you set the <strong>Base URL</strong> to
+<code>"http://localhost:9000"</code> and <strong>File Name</strong> to
+<code>"example"</code>, you'll get: <code>//#
+sourceMappingURL=http://localhost:9000/example.js.map</code>. appended to the end of
+your obfuscated code.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Seed</td>
+<td>
+<p>By default (<code>seed = 0</code>), each time you obfuscate your code you'll get a new result
+(i.e: different variable names, different variables inserted into the
+<code>stringArray</code>, etc). If you want repeatable results, set the <code>seed</code> to
+a specific integer.</p>
+</td>
+</tr>
+<tr>
+<td class="collapsing">Target</td>
+<td>
+<p>You can set the target environment of the obfuscated code to one of the following:</p>
+<ul>
+<li><strong>Browser</strong></li>
+<li><strong>Browser No Eval</strong></li>
+<li><strong>Node</strong></li>
+</ul>
+<div class="ui tiny message">
+<p><i class="warning sign icon"></i>Currently the output of <code>browser</code> and <code>node</code>
+is identical.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div> 
+</div> 
+<div class="row">
+<div class="column">
+<h3 id="FAQ">FAQ</h3>
+<h4>Why would I want to obfuscate my JavaScript code?</h4>
+<p>There're a numerous reasons why it's a good idea to protect your code, such as:</p>
+<ul>
+<li>Prevent anyone from simply copy/pasting your work. This is specially important on 100% client side
+projects, such as HTML5 games;
+</li>
+<li>Removal of comments and whitespace that aren't needed. Making it faster to load and harder to
+understand;
+</li>
+<li>Protection of work that hasn't been paid yet. You can show your work to the client knowing that they
+won't have the source code until the invoice has been paid.
+</li>
+</ul>
+<h4>Is this obfuscator absolutely foolproof?</h4>
+<p>No, while it's impossible to recover the exact original source code, someone with the time, knowledge and
+patience can reverse-engineer it.</p>
+<p>Since the JavaScript runs on the browser, the browser's JavaScript engine must be able to read and
+interpret it, so there's no way to prevent that. And any tool that promises that is not being
+honest.</p>
+<h4>Why my obfuscated code is larger than my original source?</h4>
+<p>Because the obfuscator introduces new pieces of code that are meant to protect and defend against
+debugging and reverse-engineering. Also strings are converted to <code>\xAB</code> hexadecimal code to
+make things a little bit harder to understand. You don't have to worry too much about code size because
+since there're a lot of repetition, the obfuscated code will be compressed extremely well by your
+webserver (if you have GZIP compression enabled on your server, which most do nowadays).</p>
+<h4>Can I run a minifier such as UglifyJS or Google Closure Compiler on the obfuscated output?</h4>
+<p>No, it's not recommended and in some cases it'll break the code (such as if you enable <strong>self-defending</strong>).
+You can run your code through a minifier before to make sure that it removes dead code and do other
+optimizations, though.</p>
+<h4>Do you store my source code?</h4>
+<p>No. The source is processed by our application server, then to the obfuscator and back to the browser, so
+it only stays on our server memory for a brief period of time (usually milliseconds). </p>
+<h4>Can I recover the original source code from the obfuscated one?</h4>
+<p>No, it's impossible to revert the obfuscated code back to your original code, so keep the original
+safe.</p>
+<h4>Does this tool works with Node.js source code?</h4>
+<p>Yes.</p>
+<h4>I want to run the obfuscator on my own server/machine. Is it possible?</h4>
+<p>Sure. This tool uses a free and open source (BSD-2-Clause licensed) obfuscator written in TypeScript. You
+can go to <a href="https://github.com/javascript-obfuscator/javascript-obfuscator" target="_new">its
+GitHub page</a> and read more there.</p>
+<p>There are also a number of plugins, such as: <a href="https://github.com/javascript-obfuscator/webpack-obfuscator">webpack-obfuscator</a>, <a href="https://github.com/javascript-obfuscator/gulp-javascript-obfuscator">gulp-javascript-obfuscator</a>
+and
+<a href="https://github.com/javascript-obfuscator/grunt-contrib-obfuscator">grunt-contrib-obfuscator</a>.
+</p><p>Also, this web app is open-source as well. <a href="https://github.com/javascript-obfuscator/javascript-obfuscator-ui">Check out our GitHub</a>.
+</p>
+<h4>What are other similar tools?</h4>
+<p>If you're interested in just uglyfing and compressing your code, I suggest <a href="https://jscompress.com/" target="_new">JSCompress.com</a>.</p>
+</div>
+</div>
+<div class="row">
+<div class="column">
+<div class="ui basic segment secondary">
+<h3 class="ui header">Support project:</h3>
+<div id="DonateBadges">
+<a class="donate-badge" href="https://opencollective.com/javascript-obfuscator#backer">
+<img src="./js Encrypton_files/badge.svg" alt="opencollective bakers">
+</a>
+<a class="donate-badge" href="https://opencollective.com/javascript-obfuscator#backer">
+<img src="./js Encrypton_files/badge(1).svg" alt="opencollective sponsors">
+</a>
+</div>
+<div class="ui small header">Also:</div>
+<div id="DonateWallets" class="ui bulleted list">
+<div class="item"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=javascript-obfuscator@yandex.ru&amp;lc=US&amp;no_note=0&amp;item_name=Support+javascript-obfuscator&amp;cn=&amp;curency_code=USD&amp;bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">PayPal Credit Card</a></div>
+<div class="item"><a href="https://www.paypal.me/javascriptobfuscator">PayPal</a></div>
+<div class="item">(Bitcoin) 14yhtZxLNp6ekZAgmEmPJqEKUP2VtUxQK6</div>
+<div class="item">(Ether) 0x5Df9eBcFB2D0f3315d03Ac112104b9023C409dc1</div>
+</div>
+<div class="ui tiny header">
+Big thanks to all supporters!
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="column">
+<div class="ui divider"></div>
+<span>©
+<a href="https://www.tiagoserafim.com/">Tiago Serafim</a>, <a href="https://github.com/sanex3339">Timofey Kachalov</a> - <a href="https://github.com/javascript-obfuscator/javascript-obfuscator-ui">source-code</a> - Powered by <a href="https://github.com/javascript-obfuscator/javascript-obfuscator">JavaScript Obfuscator</a>
+</span>
+</div>
+</div>
+</div>
+<script src="./js Encrypton_files/bundle.js.download"></script>
+
+
+</body></html>
